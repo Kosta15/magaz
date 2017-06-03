@@ -1,0 +1,166 @@
+html {
+  font-family: 'Oswald', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.fon-photo {
+  background-image: url(../img/dota2.jpg);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /*background-size: cover;*/
+}
+
+* {
+  position: relative;
+}
+
+.logo {
+  padding-left: 30px;
+  font-size: 100px;
+  color: red;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bolder;
+}
+
+.dota-photo {
+    float: left; 
+    border-radius: 50%;
+    border: 5px solid black;
+    width: 150px;
+    box-shadow: 0 0 8px black;
+}
+
+.number {
+  color: white;
+  font-size: 30px;
+}
+
+.gmail {
+  color: white;
+  font-size: 30px;
+}
+
+.wrap {
+  min-height: 100vh;
+  display: flex;
+  align-items: stretch;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  align-items: flex-start;
+  padding-top: 80px;
+}
+
+@media (max-width: 1200px) {
+  .content {
+    min-width: 33.33%; 
+  }
+}
+
+
+.sidebar {
+  width: 600px;
+}
+
+.sidebar a {
+  padding-left: 30px;
+  font-size: 40px;
+  text-decoration: none;
+  color: white;
+  line-height: 70px;
+}
+
+a:hover {
+  font-size: 55px;
+  color: grey;
+  text-decoration: underline;
+}
+
+.item, .item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8 {
+  min-width: 25%;
+  background: #f0f0f0;
+  border:5px solid grey;
+  border-radius: 40px 40px 40px 40px;
+  width: 140px;
+  height: 200px;
+  margin: 20px;
+  background-image: url(../img/dota1-cup.png);
+  background-repeat: no-repeat;
+  font-size: 20px;
+
+}
+
+p {
+  float: right; 
+}
+
+.item1 {
+  background-image: url(../img/any-cup.png);
+}
+
+.item2 {
+background-image: url(../img/cup-ramp.png);
+}
+
+
+.contact {
+  z-index: 2;
+  font-family: 'Oswald', sans-serif;
+  width: 450px;
+  position: fixed;
+  top: 20px;
+  right: 0;
+  transform: translateX(80%);
+  transition: transform 200ms ease-in;
+  border-radius: 50%;
+  background: rgba(  220, 220, 220, 0.3); 
+}
+
+.contact:hover {
+  transform: translateX(0);
+}
+
+
+.buy {
+  float: right;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 20px;
+  background: rgb(64,199,129);
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+  transition: 0.2s;
+  cursor: pointer;
+  width: 100px;
+
+}
+
+.buy:hover { background: rgb(53, 167, 110); 
+.buy:active {
+  background: rgb(33,147,90);
+  box-shadow: 0 3px rgb(33,147,90) inset;
+}
+
+/*.bottom-round {
+  position: relative;
+  background: #fff;
+  height: 200px;
+  border-radius: 0 0 100% 100%;
+  z-index: 2;
+}*/
+
+.footer {
+  background: grey;
+  height: 200px;
+  z-index: 3;
+
+}
